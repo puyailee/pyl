@@ -1,5 +1,8 @@
-.rv-box{position:relative;width:100%;margin:0 auto}
+.rv-box{position:relative;width:100%;margin:0 auto;overflow:hidden;border-radius:4px}
 .rv-box iframe{width:100%;aspect-ratio:16/9;display:block}
-.rv-overlay{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:80%;text-align:center;color:#fff;text-shadow:0 2px 6px rgba(0,0,0,.8);pointer-events:none}
-.rv-name{margin:0 0 6px;font-size:1.1rem;font-weight:700;letter-spacing:.5px}
-.rv-text{margin:0;font-size:.95rem;line-height:1.4}
+.rv-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:32px 24px;background:linear-gradient(to bottom,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 65%,rgba(0,0,0,.55) 100%);color:#fff;pointer-events:none}
+.rv-top{display:flex;flex-direction:column;gap:6px}
+.rv-title{margin:0;font-size:1.8rem;font-weight:800;letter-spacing:.5px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+.rv-artist{margin:0;font-size:.95rem;font-weight:400;letter-spacing:2px;text-transform:uppercase;opacity:.85;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.rv-text{margin:0;max-width:70%;font-size:1rem;line-height:1.6;font-weight:300;text-shadow:0 2px 8px rgba(0,0,0,.7)}
+.rv-name{margin:0;font-size:.8rem;font-weight:600;letter-spacing:1px;opacity:.8;text-shadow:0 1px 6px rgba(0,0,0,.6)}
