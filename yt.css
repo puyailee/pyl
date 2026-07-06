@@ -1,8 +1,11 @@
-.rv-box{position:relative;width:100%;margin:0 auto;overflow:hidden;border-radius:4px}
-.rv-box iframe{width:100%;aspect-ratio:16/9;display:block}
-.rv-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;align-items:center;text-align:center;padding:32px 24px;background:linear-gradient(to bottom,rgba(0,0,0,.45) 0%,rgba(0,0,0,0) 25%,rgba(0,0,0,0) 65%,rgba(0,0,0,.55) 100%);color:#fff;pointer-events:none}
-.rv-top{display:flex;flex-direction:column;gap:6px}
-.rv-title{margin:0;font-size:1.8rem;font-weight:800;letter-spacing:.5px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
-.rv-artist{margin:0;font-size:.95rem;font-weight:400;letter-spacing:2px;text-transform:uppercase;opacity:.85;text-shadow:0 1px 6px rgba(0,0,0,.6)}
-.rv-text{margin:0;max-width:70%;font-size:1rem;line-height:1.6;font-weight:300;text-shadow:0 2px 8px rgba(0,0,0,.7)}
-.rv-name{margin:0;font-size:.8rem;font-weight:600;letter-spacing:1px;opacity:.8;text-shadow:0 1px 6px rgba(0,0,0,.6)}
+.rv-box{position:relative;width:100%;margin:0 auto;overflow:hidden;border-radius:6px;background:#000}
+.rv-box iframe{width:100%;aspect-ratio:16/9;display:block;opacity:.92}
+.rv-overlay{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:18px;text-align:center;padding:40px;background:radial-gradient(ellipse at center,rgba(0,0,0,.15) 0%,rgba(0,0,0,.55) 75%),linear-gradient(to bottom,rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 60%,rgba(0,0,0,.6) 100%);pointer-events:none;animation:rvFade 1.2s ease-out}
+.rv-top{display:flex;flex-direction:column;gap:8px}
+.rv-title{margin:0;font-size:2.1rem;font-weight:800;letter-spacing:.3px;color:#fff;text-shadow:0 4px 24px rgba(0,0,0,.8);font-family:Georgia,'Noto Serif Thai',serif}
+.rv-artist{margin:0;font-size:.8rem;font-weight:500;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,.75);text-shadow:0 2px 10px rgba(0,0,0,.7)}
+.rv-divider{width:36px;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.6),transparent);border-radius:2px}
+.rv-text{margin:0;max-width:60%;font-size:1.05rem;font-weight:300;line-height:1.75;color:rgba(255,255,255,.95);text-shadow:0 3px 14px rgba(0,0,0,.75);font-style:italic}
+.rv-name{margin:6px 0 0;font-size:.72rem;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:rgba(255,255,255,.6);text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.rv-name::before{content:'— '}
+@keyframes rvFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
